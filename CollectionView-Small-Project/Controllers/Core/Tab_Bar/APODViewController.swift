@@ -12,9 +12,21 @@ final class APODViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-		
 		view.backgroundColor = .systemBackground
 		title = "Astronomy Picture of The Day"
+		
+		let request = APIRequest(endpoint: .marsPhotos,
+								 pathComponents: ["api", "v1", "rovers", "curiosity", "photos"], 
+								 queryParameters: [
+									URLQueryItem(name: "sol", value: "1000"),
+									URLQueryItem(name: "page", value: "1"),
+								 ])
+		
+//		print(request.url)
+		
+		APIService.shared.execute(request, expecting: APODModel.self) { result in
+			
+		}
 		
     }
     

@@ -12,5 +12,5 @@ enum APIEndpoint: String {
 	/// Endpoint to get planetary info
 	case planetary = "planetary"
 	/// Endpoint to get mars photos info
-	case marsPhotos = "mars_photos"
+	case marsPhotos = "mars-photos"
 }
