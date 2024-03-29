@@ -7,6 +7,7 @@
 
 import UIKit
 
+/// Controller to show the Mars Rover Photos
 final class MarsRoverPhotosViewController: UIViewController {
 
     override func viewDidLoad() {

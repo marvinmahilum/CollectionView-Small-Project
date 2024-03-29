@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// Obect that represents a single API call
 final class APIRequest {
 	
 }

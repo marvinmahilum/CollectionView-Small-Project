@@ -7,6 +7,7 @@
 
 import UIKit
 
+/// Controller to show the Astronomy Picture of the Day
 final class APODViewController: UIViewController {
 
     override func viewDidLoad() {
