@@ -14,6 +14,9 @@
 		C4C23C992BB67507001D5F13 /* MarsRoverPhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C23C982BB67507001D5F13 /* MarsRoverPhotosViewController.swift */; };
 		C4C23C9E2BB67F32001D5F13 /* APODModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C23C9D2BB67F32001D5F13 /* APODModel.swift */; };
 		C4C23CA02BB67F98001D5F13 /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C23C9F2BB67F98001D5F13 /* PhotoModel.swift */; };
+		C4C23CA52BB6948F001D5F13 /* GetMarsRoverPhotosResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C23CA42BB6948F001D5F13 /* GetMarsRoverPhotosResponse.swift */; };
+		C4C23CA82BB695B5001D5F13 /* ApiJSONDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C23CA72BB695B5001D5F13 /* ApiJSONDecoder.swift */; };
+		C4C23CAA2BB695D7001D5F13 /* ApiJSONEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C23CA92BB695D7001D5F13 /* ApiJSONEncoder.swift */; };
 		C4F83C132BB64FEF00470439 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F83C122BB64FEF00470439 /* AppDelegate.swift */; };
 		C4F83C152BB64FEF00470439 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F83C142BB64FEF00470439 /* SceneDelegate.swift */; };
 		C4F83C172BB64FEF00470439 /* NASATabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F83C162BB64FEF00470439 /* NASATabBarController.swift */; };
@@ -29,6 +32,9 @@
 		C4C23C982BB67507001D5F13 /* MarsRoverPhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsRoverPhotosViewController.swift; sourceTree = "<group>"; };
 		C4C23C9D2BB67F32001D5F13 /* APODModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODModel.swift; sourceTree = "<group>"; };
 		C4C23C9F2BB67F98001D5F13 /* PhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModel.swift; sourceTree = "<group>"; };
+		C4C23CA42BB6948F001D5F13 /* GetMarsRoverPhotosResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMarsRoverPhotosResponse.swift; sourceTree = "<group>"; };
+		C4C23CA72BB695B5001D5F13 /* ApiJSONDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiJSONDecoder.swift; sourceTree = "<group>"; };
+		C4C23CA92BB695D7001D5F13 /* ApiJSONEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiJSONEncoder.swift; sourceTree = "<group>"; };
 		C4F83C0F2BB64FEF00470439 /* CollectionView-Small-Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CollectionView-Small-Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4F83C122BB64FEF00470439 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4F83C142BB64FEF00470439 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +92,23 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		C4C23CA32BB69460001D5F13 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				C4C23CA42BB6948F001D5F13 /* GetMarsRoverPhotosResponse.swift */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		C4C23CA62BB69587001D5F13 /* Encoder-and-Decoder */ = {
+			isa = PBXGroup;
+			children = (
+				C4C23CA72BB695B5001D5F13 /* ApiJSONDecoder.swift */,
+				C4C23CA92BB695D7001D5F13 /* ApiJSONEncoder.swift */,
+			);
+			path = "Encoder-and-Decoder";
+			sourceTree = "<group>";
+		};
 		C4F83C062BB64FEF00470439 = {
 			isa = PBXGroup;
 			children = (
@@ -105,8 +128,10 @@
 		C4F83C112BB64FEF00470439 /* CollectionView-Small-Project */ = {
 			isa = PBXGroup;
 			children = (
+				C4C23CA62BB69587001D5F13 /* Encoder-and-Decoder */,
 				C4C23C8F2BB66908001D5F13 /* APIClient */,
 				C4C23C9C2BB67EE9001D5F13 /* Models */,
+				C4C23CA32BB69460001D5F13 /* Responses */,
 				C4F83C292BB6507900470439 /* Controllers */,
 				C4F83C2A2BB6509000470439 /* Resources */,
 				C4F83C122BB64FEF00470439 /* AppDelegate.swift */,
@@ -208,8 +233,11 @@
 				C4F83C132BB64FEF00470439 /* AppDelegate.swift in Sources */,
 				C4C23C992BB67507001D5F13 /* MarsRoverPhotosViewController.swift in Sources */,
 				C4C23C972BB674DB001D5F13 /* APODViewController.swift in Sources */,
+				C4C23CA82BB695B5001D5F13 /* ApiJSONDecoder.swift in Sources */,
 				C4C23C9E2BB67F32001D5F13 /* APODModel.swift in Sources */,
 				C4C23C912BB66954001D5F13 /* APIService.swift in Sources */,
+				C4C23CA52BB6948F001D5F13 /* GetMarsRoverPhotosResponse.swift in Sources */,
+				C4C23CAA2BB695D7001D5F13 /* ApiJSONEncoder.swift in Sources */,
 				C4C23C932BB669B5001D5F13 /* APIRequest.swift in Sources */,
 				C4C23CA02BB67F98001D5F13 /* PhotoModel.swift in Sources */,
 				C4F83C152BB64FEF00470439 /* SceneDelegate.swift in Sources */,

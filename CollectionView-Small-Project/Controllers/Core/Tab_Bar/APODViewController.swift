@@ -15,24 +15,33 @@ final class APODViewController: UIViewController {
 		view.backgroundColor = .systemBackground
 		title = "Astronomy Picture of The Day"
 		
-//		let request = APIRequest(endpoint: .marsPhotos,
-//								 pathComponents: ["api", "v1", "rovers", "curiosity", "photos"], 
-//								 queryParameters: [
-//									URLQueryItem(name: "sol", value: "1000"),
-//									URLQueryItem(name: "page", value: "1"),
-//								 ])
+		let request = APIRequest(endpoint: .marsPhotos,
+								 pathComponents: ["api", "v1", "rovers", "curiosity", "photos"], 
+								 queryParameters: [
+									URLQueryItem(name: "sol", value: "1000"),
+									URLQueryItem(name: "page", value: "1"),
+								 ])
 		
-		
-		let request = APIRequest(endpoint: .planetary, pathComponents: ["apod"])
-		
-		APIService.shared.execute(request, expecting: APODModel.self) { result in
+		APIService.shared.execute(request, expecting: GetMarsRoverPhotosResponse.self) { result in
 			switch result {
 			case .success(let model):
-				print(model.title)
+				print(model)
 			case .failure(let error):
 				print(error)
 			}
 		}
+		
+		
+//		let request = APIRequest(endpoint: .planetary, pathComponents: ["apod"])
+//		
+//		APIService.shared.execute(request, expecting: APODModel.self) { result in
+//			switch result {
+//			case .success(let model):
+//				print(model.title)
+//			case .failure(let error):
+//				print(error)
+//			}
+//		}
 		
     }
     

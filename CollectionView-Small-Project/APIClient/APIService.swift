@@ -44,7 +44,7 @@ final class APIService {
 			
 			// Decode response
 			do {
-				let result = try JSONDecoder().decode(type.self, from: data)
+				let result = try ApiJSONDecoder().decode(type.self, from: data)
 				completion(.success(result))
 			}
 			catch {
