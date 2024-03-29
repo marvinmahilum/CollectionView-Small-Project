@@ -54,6 +54,7 @@ final class APIRequest {
 	
 	/// Computed & constructed API url
 	public var url: URL? {
+		print("urlRequest: \(urlString)")
 		return URL(string: urlString)
 	}
 	
