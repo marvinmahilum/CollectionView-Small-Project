@@ -7,18 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C4C23C912BB66954001D5F13 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C23C902BB66954001D5F13 /* APIService.swift */; };
+		C4C23C932BB669B5001D5F13 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C23C922BB669B5001D5F13 /* APIRequest.swift */; };
+		C4C23C952BB669F0001D5F13 /* APIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C23C942BB669F0001D5F13 /* APIEndpoint.swift */; };
+		C4C23C972BB674DB001D5F13 /* APODViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C23C962BB674DB001D5F13 /* APODViewController.swift */; };
+		C4C23C992BB67507001D5F13 /* MarsRoverPhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C23C982BB67507001D5F13 /* MarsRoverPhotosViewController.swift */; };
 		C4F83C132BB64FEF00470439 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F83C122BB64FEF00470439 /* AppDelegate.swift */; };
 		C4F83C152BB64FEF00470439 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F83C142BB64FEF00470439 /* SceneDelegate.swift */; };
-		C4F83C172BB64FEF00470439 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F83C162BB64FEF00470439 /* ViewController.swift */; };
+		C4F83C172BB64FEF00470439 /* NASATabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F83C162BB64FEF00470439 /* NASATabBarViewController.swift */; };
 		C4F83C1C2BB64FF100470439 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4F83C1B2BB64FF100470439 /* Assets.xcassets */; };
 		C4F83C1F2BB64FF100470439 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4F83C1D2BB64FF100470439 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C4C23C902BB66954001D5F13 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		C4C23C922BB669B5001D5F13 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		C4C23C942BB669F0001D5F13 /* APIEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoint.swift; sourceTree = "<group>"; };
+		C4C23C962BB674DB001D5F13 /* APODViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODViewController.swift; sourceTree = "<group>"; };
+		C4C23C982BB67507001D5F13 /* MarsRoverPhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsRoverPhotosViewController.swift; sourceTree = "<group>"; };
 		C4F83C0F2BB64FEF00470439 /* CollectionView-Small-Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CollectionView-Small-Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4F83C122BB64FEF00470439 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4F83C142BB64FEF00470439 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C4F83C162BB64FEF00470439 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C4F83C162BB64FEF00470439 /* NASATabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NASATabBarViewController.swift; sourceTree = "<group>"; };
 		C4F83C1B2BB64FF100470439 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4F83C1E2BB64FF100470439 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C4F83C202BB64FF100470439 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -35,6 +45,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C4C23C8F2BB66908001D5F13 /* APIClient */ = {
+			isa = PBXGroup;
+			children = (
+				C4C23C902BB66954001D5F13 /* APIService.swift */,
+				C4C23C922BB669B5001D5F13 /* APIRequest.swift */,
+				C4C23C942BB669F0001D5F13 /* APIEndpoint.swift */,
+			);
+			path = APIClient;
+			sourceTree = "<group>";
+		};
+		C4C23C9A2BB67537001D5F13 /* Tab_Bar */ = {
+			isa = PBXGroup;
+			children = (
+				C4C23C962BB674DB001D5F13 /* APODViewController.swift */,
+				C4C23C982BB67507001D5F13 /* MarsRoverPhotosViewController.swift */,
+			);
+			path = Tab_Bar;
+			sourceTree = "<group>";
+		};
+		C4C23C9B2BB67597001D5F13 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				C4F83C162BB64FEF00470439 /* NASATabBarViewController.swift */,
+				C4C23C9A2BB67537001D5F13 /* Tab_Bar */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
 		C4F83C062BB64FEF00470439 = {
 			isa = PBXGroup;
 			children = (
@@ -54,6 +92,7 @@
 		C4F83C112BB64FEF00470439 /* CollectionView-Small-Project */ = {
 			isa = PBXGroup;
 			children = (
+				C4C23C8F2BB66908001D5F13 /* APIClient */,
 				C4F83C292BB6507900470439 /* Controllers */,
 				C4F83C2A2BB6509000470439 /* Resources */,
 				C4F83C122BB64FEF00470439 /* AppDelegate.swift */,
@@ -67,7 +106,7 @@
 		C4F83C292BB6507900470439 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				C4F83C162BB64FEF00470439 /* ViewController.swift */,
+				C4C23C9B2BB67597001D5F13 /* Core */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -150,8 +189,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4F83C172BB64FEF00470439 /* ViewController.swift in Sources */,
+				C4F83C172BB64FEF00470439 /* NASATabBarViewController.swift in Sources */,
+				C4C23C952BB669F0001D5F13 /* APIEndpoint.swift in Sources */,
 				C4F83C132BB64FEF00470439 /* AppDelegate.swift in Sources */,
+				C4C23C992BB67507001D5F13 /* MarsRoverPhotosViewController.swift in Sources */,
+				C4C23C972BB674DB001D5F13 /* APODViewController.swift in Sources */,
+				C4C23C912BB66954001D5F13 /* APIService.swift in Sources */,
+				C4C23C932BB669B5001D5F13 /* APIRequest.swift in Sources */,
 				C4F83C152BB64FEF00470439 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
