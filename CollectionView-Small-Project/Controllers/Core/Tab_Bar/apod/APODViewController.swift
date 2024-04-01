@@ -20,22 +20,6 @@ final class APODViewController: UIViewController {
 		view.addSubviews(apodView)
 		addConstraints()
 		
-//		let request = APIRequest(endpoint: .marsPhotos,
-//								 pathComponents: ["api", "v1", "rovers", "curiosity", "photos"], 
-//								 queryParameters: [
-//									URLQueryItem(name: "sol", value: "1000"),
-//									URLQueryItem(name: "page", value: "1"),
-//								 ])
-//		
-//		APIService.shared.execute(request, expecting: GetMarsRoverPhotosResponse.self) { result in
-//			switch result {
-//			case .success(let model):
-//				print(model)
-//			case .failure(let error):
-//				print(error)
-//			}
-//		}
-		
     }
 	
 	private func addConstraints() {

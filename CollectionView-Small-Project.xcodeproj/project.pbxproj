@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C497A7A12BBA731D00B8081E /* MarsRoverPhotosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C497A7A02BBA731D00B8081E /* MarsRoverPhotosView.swift */; };
+		C497A7A32BBA754400B8081E /* MarsRoverPhotosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C497A7A22BBA754400B8081E /* MarsRoverPhotosViewModel.swift */; };
+		C497A7A62BBA7CC600B8081E /* MarsRoverPhotosCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C497A7A52BBA7CC600B8081E /* MarsRoverPhotosCollectionViewCell.swift */; };
+		C497A7A82BBA7D4B00B8081E /* MarsRoverPhotosCollectionViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C497A7A72BBA7D4B00B8081E /* MarsRoverPhotosCollectionViewCellViewModel.swift */; };
 		C4C23C912BB66954001D5F13 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C23C902BB66954001D5F13 /* APIService.swift */; };
 		C4C23C932BB669B5001D5F13 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C23C922BB669B5001D5F13 /* APIRequest.swift */; };
 		C4C23C952BB669F0001D5F13 /* APIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C23C942BB669F0001D5F13 /* APIEndpoint.swift */; };
@@ -31,6 +35,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C497A7A02BBA731D00B8081E /* MarsRoverPhotosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsRoverPhotosView.swift; sourceTree = "<group>"; };
+		C497A7A22BBA754400B8081E /* MarsRoverPhotosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsRoverPhotosViewModel.swift; sourceTree = "<group>"; };
+		C497A7A52BBA7CC600B8081E /* MarsRoverPhotosCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsRoverPhotosCollectionViewCell.swift; sourceTree = "<group>"; };
+		C497A7A72BBA7D4B00B8081E /* MarsRoverPhotosCollectionViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsRoverPhotosCollectionViewCellViewModel.swift; sourceTree = "<group>"; };
 		C4C23C902BB66954001D5F13 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		C4C23C922BB669B5001D5F13 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
 		C4C23C942BB669F0001D5F13 /* APIEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoint.swift; sourceTree = "<group>"; };
@@ -67,6 +75,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C497A7A42BBA7C9A00B8081E /* custom_cell */ = {
+			isa = PBXGroup;
+			children = (
+				C497A7A52BBA7CC600B8081E /* MarsRoverPhotosCollectionViewCell.swift */,
+				C497A7A72BBA7D4B00B8081E /* MarsRoverPhotosCollectionViewCellViewModel.swift */,
+			);
+			path = custom_cell;
+			sourceTree = "<group>";
+		};
 		C4C23C8F2BB66908001D5F13 /* APIClient */ = {
 			isa = PBXGroup;
 			children = (
@@ -144,6 +161,9 @@
 			isa = PBXGroup;
 			children = (
 				C4C23C982BB67507001D5F13 /* MarsRoverPhotosViewController.swift */,
+				C497A7A02BBA731D00B8081E /* MarsRoverPhotosView.swift */,
+				C497A7A22BBA754400B8081E /* MarsRoverPhotosViewModel.swift */,
+				C497A7A42BBA7C9A00B8081E /* custom_cell */,
 			);
 			path = mars_rover_photos;
 			sourceTree = "<group>";
@@ -283,16 +303,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C497A7A82BBA7D4B00B8081E /* MarsRoverPhotosCollectionViewCellViewModel.swift in Sources */,
 				C4F83C172BB64FEF00470439 /* NASATabBarController.swift in Sources */,
 				C4F574792BBA385D00346611 /* APODCollectionViewCellViewModel.swift in Sources */,
 				C4C23C952BB669F0001D5F13 /* APIEndpoint.swift in Sources */,
 				C4F574652BB6D2C700346611 /* UIView+.swift in Sources */,
+				C497A7A12BBA731D00B8081E /* MarsRoverPhotosView.swift in Sources */,
 				C4F83C132BB64FEF00470439 /* AppDelegate.swift in Sources */,
 				C4C23C992BB67507001D5F13 /* MarsRoverPhotosViewController.swift in Sources */,
 				C4F574722BB7A91B00346611 /* APODViewModel.swift in Sources */,
 				C4C23C972BB674DB001D5F13 /* APODViewController.swift in Sources */,
 				C4C23CA82BB695B5001D5F13 /* ApiJSONDecoder.swift in Sources */,
+				C497A7A62BBA7CC600B8081E /* MarsRoverPhotosCollectionViewCell.swift in Sources */,
 				C4F574742BB7A96800346611 /* APODView.swift in Sources */,
+				C497A7A32BBA754400B8081E /* MarsRoverPhotosViewModel.swift in Sources */,
 				C4F574772BB7AEE100346611 /* APODCollectionViewCell.swift in Sources */,
 				C4C23C9E2BB67F32001D5F13 /* APODModel.swift in Sources */,
 				C4C23C912BB66954001D5F13 /* APIService.swift in Sources */,

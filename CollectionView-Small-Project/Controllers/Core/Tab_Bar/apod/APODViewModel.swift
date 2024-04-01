@@ -34,7 +34,6 @@ final class APODViewModel: NSObject {
 		APIService.shared.execute(request, expecting: APODModel.self) { [weak self] result in
 			switch result {
 			case .success(let model):
-				print(model.title)
 				self?.apodResult.append(model)
 				DispatchQueue.main.async {
 					self?.delegate?.didLoad()
