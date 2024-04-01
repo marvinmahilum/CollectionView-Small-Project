@@ -19,6 +19,10 @@
 		C4C23CAA2BB695D7001D5F13 /* ApiJSONEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C23CA92BB695D7001D5F13 /* ApiJSONEncoder.swift */; };
 		C4F574622BB6D26500346611 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = C4F574612BB6D26500346611 /* Kingfisher */; };
 		C4F574652BB6D2C700346611 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F574642BB6D2C700346611 /* UIView+.swift */; };
+		C4F574722BB7A91B00346611 /* APODViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F574712BB7A91B00346611 /* APODViewModel.swift */; };
+		C4F574742BB7A96800346611 /* APODView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F574732BB7A96800346611 /* APODView.swift */; };
+		C4F574772BB7AEE100346611 /* APODCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F574762BB7AEE100346611 /* APODCollectionViewCell.swift */; };
+		C4F574792BBA385D00346611 /* APODCollectionViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F574782BBA385D00346611 /* APODCollectionViewCellViewModel.swift */; };
 		C4F83C132BB64FEF00470439 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F83C122BB64FEF00470439 /* AppDelegate.swift */; };
 		C4F83C152BB64FEF00470439 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F83C142BB64FEF00470439 /* SceneDelegate.swift */; };
 		C4F83C172BB64FEF00470439 /* NASATabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F83C162BB64FEF00470439 /* NASATabBarController.swift */; };
@@ -38,6 +42,10 @@
 		C4C23CA72BB695B5001D5F13 /* ApiJSONDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiJSONDecoder.swift; sourceTree = "<group>"; };
 		C4C23CA92BB695D7001D5F13 /* ApiJSONEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiJSONEncoder.swift; sourceTree = "<group>"; };
 		C4F574642BB6D2C700346611 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
+		C4F574712BB7A91B00346611 /* APODViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODViewModel.swift; sourceTree = "<group>"; };
+		C4F574732BB7A96800346611 /* APODView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODView.swift; sourceTree = "<group>"; };
+		C4F574762BB7AEE100346611 /* APODCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODCollectionViewCell.swift; sourceTree = "<group>"; };
+		C4F574782BBA385D00346611 /* APODCollectionViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODCollectionViewCellViewModel.swift; sourceTree = "<group>"; };
 		C4F83C0F2BB64FEF00470439 /* CollectionView-Small-Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CollectionView-Small-Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4F83C122BB64FEF00470439 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4F83C142BB64FEF00470439 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,8 +80,8 @@
 		C4C23C9A2BB67537001D5F13 /* Tab_Bar */ = {
 			isa = PBXGroup;
 			children = (
-				C4C23C962BB674DB001D5F13 /* APODViewController.swift */,
-				C4C23C982BB67507001D5F13 /* MarsRoverPhotosViewController.swift */,
+				C4F5746F2BB7A8E500346611 /* apod */,
+				C4F574702BB7A8F500346611 /* mars_rover_photos */,
 			);
 			path = Tab_Bar;
 			sourceTree = "<group>";
@@ -119,6 +127,34 @@
 				C4F574642BB6D2C700346611 /* UIView+.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		C4F5746F2BB7A8E500346611 /* apod */ = {
+			isa = PBXGroup;
+			children = (
+				C4C23C962BB674DB001D5F13 /* APODViewController.swift */,
+				C4F574732BB7A96800346611 /* APODView.swift */,
+				C4F574712BB7A91B00346611 /* APODViewModel.swift */,
+				C4F574752BB7AEB300346611 /* custom_cell */,
+			);
+			path = apod;
+			sourceTree = "<group>";
+		};
+		C4F574702BB7A8F500346611 /* mars_rover_photos */ = {
+			isa = PBXGroup;
+			children = (
+				C4C23C982BB67507001D5F13 /* MarsRoverPhotosViewController.swift */,
+			);
+			path = mars_rover_photos;
+			sourceTree = "<group>";
+		};
+		C4F574752BB7AEB300346611 /* custom_cell */ = {
+			isa = PBXGroup;
+			children = (
+				C4F574762BB7AEE100346611 /* APODCollectionViewCell.swift */,
+				C4F574782BBA385D00346611 /* APODCollectionViewCellViewModel.swift */,
+			);
+			path = custom_cell;
 			sourceTree = "<group>";
 		};
 		C4F83C062BB64FEF00470439 = {
@@ -248,12 +284,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4F83C172BB64FEF00470439 /* NASATabBarController.swift in Sources */,
+				C4F574792BBA385D00346611 /* APODCollectionViewCellViewModel.swift in Sources */,
 				C4C23C952BB669F0001D5F13 /* APIEndpoint.swift in Sources */,
 				C4F574652BB6D2C700346611 /* UIView+.swift in Sources */,
 				C4F83C132BB64FEF00470439 /* AppDelegate.swift in Sources */,
 				C4C23C992BB67507001D5F13 /* MarsRoverPhotosViewController.swift in Sources */,
+				C4F574722BB7A91B00346611 /* APODViewModel.swift in Sources */,
 				C4C23C972BB674DB001D5F13 /* APODViewController.swift in Sources */,
 				C4C23CA82BB695B5001D5F13 /* ApiJSONDecoder.swift in Sources */,
+				C4F574742BB7A96800346611 /* APODView.swift in Sources */,
+				C4F574772BB7AEE100346611 /* APODCollectionViewCell.swift in Sources */,
 				C4C23C9E2BB67F32001D5F13 /* APODModel.swift in Sources */,
 				C4C23C912BB66954001D5F13 /* APIService.swift in Sources */,
 				C4C23CA52BB6948F001D5F13 /* GetMarsRoverPhotosResponse.swift in Sources */,
@@ -404,12 +444,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "CollectionView-Small-Project/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -430,12 +472,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "CollectionView-Small-Project/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
