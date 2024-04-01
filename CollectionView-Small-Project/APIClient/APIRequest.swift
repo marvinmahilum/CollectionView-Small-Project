@@ -10,12 +10,6 @@ import Foundation
 /// Obect that represents a single API call
 final class APIRequest {
 	
-	/// API Constants
-	private struct Constants {
-		static let baseUrl = "https://api.nasa.gov"
-		static let apiKey = "zChgiXdObTMHJabRygPO47q72r5tsVKtKWVIfo40"
-	}
-	
 	/// Desired endpoint
 	private let endpoint: APIEndpoint
 	
@@ -27,7 +21,7 @@ final class APIRequest {
 	
 	/// Constructed url for the api request in string format
 	private var urlString: String {
-		var string = Constants.baseUrl
+		var string = Config.shared.baseURL.absoluteString
 		string += "/"
 		string += endpoint.rawValue
 		
@@ -37,7 +31,7 @@ final class APIRequest {
 			})
 		}
 		
-		queryParameters.append(URLQueryItem(name: "api_key", value: Constants.apiKey))
+		queryParameters.append(URLQueryItem(name: "api_key", value: Config.shared.apiKey))
 		
 		if !queryParameters.isEmpty {
 			string += "?"

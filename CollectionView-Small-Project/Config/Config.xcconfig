@@ -1,0 +1,13 @@
+//
+//  Config.xcconfig
+//  CollectionView-Small-Project
+//
+//  Created by CoreProc on 4/1/24.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+API_URL_SCHEME=https
+API_URL_HOST=api.nasa.gov
+API_KEY=zChgiXdObTMHJabRygPO47q72r5tsVKtKWVIfo40

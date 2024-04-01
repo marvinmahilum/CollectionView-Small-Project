@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C4331F012BBA99E800BD38BD /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4331F002BBA99E800BD38BD /* Config.swift */; };
 		C497A7A12BBA731D00B8081E /* MarsRoverPhotosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C497A7A02BBA731D00B8081E /* MarsRoverPhotosView.swift */; };
 		C497A7A32BBA754400B8081E /* MarsRoverPhotosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C497A7A22BBA754400B8081E /* MarsRoverPhotosViewModel.swift */; };
 		C497A7A62BBA7CC600B8081E /* MarsRoverPhotosCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C497A7A52BBA7CC600B8081E /* MarsRoverPhotosCollectionViewCell.swift */; };
@@ -35,6 +36,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C4331EFF2BBA999900BD38BD /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		C4331F002BBA99E800BD38BD /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		C497A7A02BBA731D00B8081E /* MarsRoverPhotosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsRoverPhotosView.swift; sourceTree = "<group>"; };
 		C497A7A22BBA754400B8081E /* MarsRoverPhotosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsRoverPhotosViewModel.swift; sourceTree = "<group>"; };
 		C497A7A52BBA7CC600B8081E /* MarsRoverPhotosCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsRoverPhotosCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -75,6 +78,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C4331EFE2BBA998700BD38BD /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				C4331EFF2BBA999900BD38BD /* Config.xcconfig */,
+				C4331F002BBA99E800BD38BD /* Config.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
 		C497A7A42BBA7C9A00B8081E /* custom_cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -196,6 +208,7 @@
 		C4F83C112BB64FEF00470439 /* CollectionView-Small-Project */ = {
 			isa = PBXGroup;
 			children = (
+				C4331EFE2BBA998700BD38BD /* Config */,
 				C4F574632BB6D2A600346611 /* Extension */,
 				C4C23CA62BB69587001D5F13 /* Encoder-and-Decoder */,
 				C4C23C8F2BB66908001D5F13 /* APIClient */,
@@ -321,6 +334,7 @@
 				C4C23C9E2BB67F32001D5F13 /* APODModel.swift in Sources */,
 				C4C23C912BB66954001D5F13 /* APIService.swift in Sources */,
 				C4C23CA52BB6948F001D5F13 /* GetMarsRoverPhotosResponse.swift in Sources */,
+				C4331F012BBA99E800BD38BD /* Config.swift in Sources */,
 				C4C23CAA2BB695D7001D5F13 /* ApiJSONEncoder.swift in Sources */,
 				C4C23C932BB669B5001D5F13 /* APIRequest.swift in Sources */,
 				C4C23CA02BB67F98001D5F13 /* PhotoModel.swift in Sources */,
@@ -344,6 +358,7 @@
 /* Begin XCBuildConfiguration section */
 		C4F83C212BB64FF100470439 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4331EFF2BBA999900BD38BD /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
